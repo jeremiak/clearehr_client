@@ -30,7 +30,7 @@ def test_create_payment_recipient_with_optional_parameter():
       pay_to_zip='REQUIRED',
       pay_to_address2='OPTIONAL')
 
-  assert payment_recipient.pay_to_address2 == 'OPTIONAL'
+  assert payment_recipient.pay_to_address2 == 'OPTIONALX'
 
 @raises(AttributeError)
 def test_create_payment_recipient_with_invalid_optional_parameter():
