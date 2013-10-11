@@ -18,10 +18,13 @@ class ServicesRendered(BaseObject):
       self.place_of_service = place_of_service
       self.service_start_date = service_start_date #YYYYMMDD
       self.service_end_date = service_end_date #YYYYMMDD
-      self.service_lines = service_lines
-
-      for service_line in service_lines:
-        self.total_claim += service_line.line_item_amount
+      
+      if type(service_lines) == list:
+        self.service_lines = service_lines
+        for service_line in service_lines:
+          self.total_claim += service_line.line_item_amount
+      else:
+        raise CreationFailedException('service_lines must be a list')
     else:
       raise CreationFailedException 
 

@@ -39,3 +39,12 @@ def test_create_services_rendered_with_invalid_optional_paramter():
       invalid_parameter='INVALID')
 
   services_rendered.invalid
+
+@raises(CreationFailedException)
+def test_create_services_rendered_with_service_lines_of_wrong_Type():
+  services_rendered = ServicesRendered(client_total_payments='REQUIRED',
+      diagnosis1='REQUIRED',
+      place_of_service='REQUIRED',
+      service_start_date='REQUIRED',
+      service_end_date='REQUIRED',
+      service_lines='NOTALIST')
