@@ -1,7 +1,7 @@
 from nose.tools import *
 
-from APIConnector.base import CreationFailedException
-from APIConnector.subscriber import Subscriber
+from ..base import CreationFailedException
+from ..subscriber import Subscriber
 
 @raises(CreationFailedException)
 def test_create_subscriber_with_no_options():

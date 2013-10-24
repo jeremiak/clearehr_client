@@ -1,9 +1,9 @@
-# ClearEHR API Client
+# ClearEHR API Client [![Build Status](https://travis-ci.org/jeremiak/clearehr_client.png?branch=master)](https://travis-ci.org/jeremiak/clearehr_client)
+
 Client for the [ClearEHR medical billing API](https://837-edi.clearehr.com/?view=837P-api-documentation)
 
 
-See requirements.txt for dependencies       [![Build Status](https://travis-ci.org/jeremiak/clearehr_client.png?branch=master)](https://travis-ci.org/jeremiak/clearehr_client)
-
+See requirements.txt for dependencies       
 ## Getting started
 1. Clone repo
 2. Setup [virtualenv](http://www.virtualenv.org/en/latest/) for project
