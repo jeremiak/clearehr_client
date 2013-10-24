@@ -1,6 +1,6 @@
 from nose.tools import *
 
-from APIConnector.base import CreationFailedException
+from ..base import CreationFailedException
 
 def test_creation_failed_exception():
   expected = 'Creation of this object failed because not all required values were submitted'

@@ -1,7 +1,7 @@
 from nose.tools import *
 
-from APIConnector.base import CreationFailedException
-from APIConnector.services_rendered import ServicesRendered 
+from ..base import CreationFailedException
+from ..services_rendered import ServicesRendered 
 
 @raises(CreationFailedException)
 def test_create_services_rendered_with_no_options():

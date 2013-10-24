@@ -1,7 +1,7 @@
 from nose.tools import *
 
-from APIConnector.base import CreationFailedException
-from APIConnector.payment_recipient import PaymentRecipient 
+from ..base import CreationFailedException
+from ..payment_recipient import PaymentRecipient 
 
 @raises(CreationFailedException)
 def test_create_payment_recipient_with_no_options():

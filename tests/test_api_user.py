@@ -1,7 +1,7 @@
 from nose.tools import *
 
-from APIConnector.base import CreationFailedException
-from APIConnector.api_user import APIUser 
+from ..base import CreationFailedException
+from ..api_user import APIUser 
 
 @raises(CreationFailedException)
 def test_create_api_user_with_no_options():
